@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Contact page was made with the use of tips from w3schools, link: "https://www.w3schools.com/howto/howto_css_contact_form.asp" -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="cute-header">
+      <div class="logo-container">
+          <a href="#" class="logo">Send a message!</a>
+      </div>
+      <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html" class="active">Contact</a>
+      </nav>
+  </header>
+    <main>
+      <div class="container">
+        <form id="contact-form">
+          <div class="name">Name</div>
+          <input type="text" name="firstname" placeholder="Your name" required />
+        
+          <div class="email">E-mail</div>
+          <input type="email" name="email" placeholder="Your e-mail" required />
+        
+          <div class="subject">Subject</div>
+          <textarea name="subject" placeholder="Write something..." style="height: 200px" required></textarea>
+        
+          <input type="submit" value="Submit" />
+        </form>
+        <p id="confirmation-message" style="display:none; color: green;"></p>
+        </div>
+      </main>
+        </form>
+      </div>
+    </main>
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        document.getElementById('confirmation-message').style.display = 'block'; // Show the confirmation message
+        document.getElementById('confirmation-message').textContent = "Thank you! Your message has been received."; // Set the message text
+        this.reset(); // Optionally, clear the form fields
+      });
+    </script>
+  </body>
+</html>
