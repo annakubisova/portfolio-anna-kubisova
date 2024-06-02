@@ -11,7 +11,7 @@ body {
 }
 
 /* Header */
-.cute-header {
+.header {
   color: #5c3c92;
   padding: 10px 20px;
   display: flex;
@@ -20,25 +20,25 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.cute-header .logo-container {
+.header .logo-container {
   font-size: 50px;
   font-weight: bold;
 }
 
-.cute-header .navbar {
+.header .navbar {
   list-style: none;
   display: flex;
 }
 
-.cute-header .navbar a {
+.header .navbar a {
   text-decoration: none;
   color: #5c3c92;
   margin: 0 15px;
   transition: color 0.3s;
 }
 
-.cute-header .navbar a:hover,
-.cute-header .navbar a.active {
+.header .navbar a:hover,
+.header .navbar a.active {
   color: #bcf745;
 }
 
@@ -307,5 +307,5 @@ input[type="submit"] {
 #more-text {
   display: none;
   font-size: 16px;
-  color: #333;
+  color: white;
 }
